@@ -1,0 +1,10 @@
+
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: DA-APP-SERVER
+  config:
+    import: optional:configserver:http://localhost:8084
