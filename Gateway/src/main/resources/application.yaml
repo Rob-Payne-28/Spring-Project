@@ -2,6 +2,11 @@ server:
   port: 8082
 
 spring:
+  application:
+    name:
+      DA-GATEWAY-SERVER
+    config:
+      import: optional:configserver:http://localhost:8084
   cloud:
     gateway:
       metrics:
@@ -9,6 +14,7 @@ spring:
       discovery:
         locator:
           enabled: true
+          lower-case-service-id: true
 eureka:
   instance:
     hostname: localhost

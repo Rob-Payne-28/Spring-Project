@@ -3,6 +3,12 @@
 server:
   port: 8080
 
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
 spring:
   application:
     name: DA-APP-SERVER

@@ -8,3 +8,9 @@ eureka:
   client:
     register-with-eureka: false
     fetchRegistry: false
+spring:
+  application:
+    name:
+      DA-EUREKA-SERVER
+    config:
+      import: optional:configserver:http://localhost:8084
