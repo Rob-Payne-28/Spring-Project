@@ -15,6 +15,12 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+      routes:
+        - id: Web-App
+          uri: http://localhost:8080
+          predicates:
+            - Path=/**
+
 eureka:
   instance:
     hostname: localhost
